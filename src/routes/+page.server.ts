@@ -7,7 +7,7 @@ const openai = new OpenAI({
 
 export async function load() {
 	const response = await openai.chat.completions.create({
-		messages: [{ role: 'user', content: 'quiero comprar una casa' }],
+		messages: [{ role: 'user', content: 'hola' }],
 		model: 'gpt-3.5-turbo'
 	});
 	return { content: response.choices[0].message.content };
