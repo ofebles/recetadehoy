@@ -1,7 +1,10 @@
 <script lang="ts">
+	export let data: { content: string };
 </script>
 
 <main>
 	<h1>API Response:</h1>
-	<p>Hellow</p>
+	<p>
+		{data.content}
+	</p>
 </main>
