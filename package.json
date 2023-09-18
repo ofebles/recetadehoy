@@ -31,6 +31,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"ai": "^2.2.12",
 		"openai": "^4.7.1"
 	}
 }

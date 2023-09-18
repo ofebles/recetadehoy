@@ -1,7 +1,14 @@
 <script lang="ts">
+	import { useCompletion } from 'ai/svelte';
+	const { input, handleSubmit, completion } = useCompletion({
+		api: '/api/completion'
+	});
 </script>
 
 <main>
-	<h1>API Response:</h1>
-	<p>Hellow</p>
+	<form on:submit={handleSubmit}>
+		<input type="text" bind:value={$input} placeholder="Describe your business..." />
+		<button type="submit">Generate Slogan</button>
+	</form>
+	<p>{$completion}</p>
 </main>
