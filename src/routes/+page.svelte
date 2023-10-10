@@ -7,7 +7,7 @@
 
 <main class="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
   <div class="max-w-md w-full px-6 py-8 bg-white shadow-md overflow-hidden sm:rounded-lg">
-    <h2 class="text-center text-2xl font-bold mb-4">Slogan Generator</h2>
+    <h2 class="text-center text-2xl font-bold mb-4">Slogan Generator Pictet</h2>
     <form class="mb-4" on:submit={handleSubmit}>
       <div class="flex flex-col mb-2">
         <label class="text-gray-700 font-bold mb-2" for="input">
