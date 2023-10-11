@@ -9,7 +9,7 @@
       "svelte.svelte-vscode"
   ],
   
-  "postCreateCommand": "pnpm install",
+  "postCreateCommand": "npm install -g pnpm && pnpm install",
   "forwardPorts": [5000],
   
   "runArgs": [
