@@ -1,21 +1,12 @@
 {
-  "name": "SvelteKit-NPM",
-  "image": "node:18",
-  "settings": { 
-      "terminal.integrated.shell.linux": "/bin/bash"
-  },
-
-  "extensions": [
-      "svelte.svelte-vscode"
-  ],
-  
-  "postCreateCommand": "npm install -g pnpm && pnpm install",
-  "forwardPorts": [5000],
-  
-  "runArgs": [
+    "name": "SvelteKit-PNPM",
+    "image": "node:18",
+    "postCreateCommand": "npm install -g pnpm",
+    "forwardPorts": [5000],
+    "runArgs": [
       "--rm",
       "-it",
       "-p",
       "5000:5000"
-  ]
-}
+    ]
+  }
